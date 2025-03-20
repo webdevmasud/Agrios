@@ -252,12 +252,10 @@ nav{
       gap: 10px;
       color: var(--normal);
 
-      & p{
-        width: 500px;
-      }
+      
       & i{
-        height: 20px;
-        width: 20px;
+        height: 25px;
+        width: 25px;
         margin-top: 2px;
         background-color: var(--deepG);
         display: flex;
@@ -337,4 +335,3 @@ nav{
   }
 }
 
-/* fresh products */
