@@ -252,10 +252,12 @@ nav{
       gap: 10px;
       color: var(--normal);
 
-      
+      & p{
+        width: 500px;
+      }
       & i{
-        height: 25px;
-        width: 25px;
+        height: 20px;
+        width: 20px;
         margin-top: 2px;
         background-color: var(--deepG);
         display: flex;
@@ -335,3 +337,76 @@ nav{
   }
 }
 
+/* fresh products */
+.productSection{
+  padding: 100px 5%;
+  text-align: center;
+
+  & h2{
+    font-size: 4rem;
+    color: var(--primary);
+    margin-bottom: 50px;
+    line-height: 1.2;
+  }
+  & .productCard{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 50px;
+
+    & .card{
+      width: 20rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+      & img{
+        width: 100%;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+      & .cardContent{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--normal);
+        padding: 20px;
+        border-radius: 15px 15px 0 0;
+        cursor: pointer;
+
+        & .iconBox{
+          width: 45px;
+          height: 45px;
+          color: var(--normal);
+          background-color: var(--primary);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 10px;
+          margin: -45px auto 15px;
+
+          & i{
+            font-size: 24px;
+          }
+        }
+        & h3{
+          color: #333;
+          margin-bottom: 10px;
+        }
+        & span{
+          color: #666;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
