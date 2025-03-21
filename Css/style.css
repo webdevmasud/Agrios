@@ -410,3 +410,105 @@ nav{
     }
   }
 }
+
+/* Time Line Section */
+.timeLine{
+  padding: 100px 5%;
+
+  & .limeLineHeader{
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+
+    & h2{
+      font-size: 42px;
+      color: var(--textTwo);
+      margin-bottom: 20px;
+      line-height: 1.2rem;
+    }
+    & p{
+      color: #666;
+      line-height: 1.6rem;
+    }
+  }
+  & .timeLineItems{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 0px 50px;
+
+    &::before{
+      content: " ";
+      position: absolute;
+      top: 10%;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: var(--deepG);
+    }
+    & .timeLineItemD{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+      &::before{
+        content: " ";
+        width: 35px;
+        height: 35px;
+        background-color: var(--deepG);
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+      & .year{
+        font-size: 3rem;
+        font-weight: 600;
+        color: var(--deepG);
+      }
+      & .event{
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--textTwo);
+        margin-bottom: 3rem;
+      }
+    }
+  }
+  & .farmers{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5rem;
+
+    & .farmerCard{
+      position: relative;
+      width: 300px;
+
+      & img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 1.5rem;
+        transition: transform 0.3s ease;
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+      & .farmerInfo{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: var(--normal);
+
+        & .role{
+          font-size: 12px;
+          opacity: .9;
+        }
+        & h3{
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
