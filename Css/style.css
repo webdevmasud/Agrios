@@ -23,6 +23,7 @@
   font-family: "Outfit", sans-serif;
   scroll-behavior: smooth;
   list-style: none;
+  box-sizing: border-box;
 }
 
 /* Custom Scroll Bar */
@@ -526,15 +527,16 @@ nav{
 
 .faqSection{
   width: 100%;
-  padding: 5rem;
   background-color: #E9F1EE;
 
   & .faqDiv{
   width: 80%;
+  padding: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
+  margin: 0 auto;
 
     & .faqImg{
       position: relative;
