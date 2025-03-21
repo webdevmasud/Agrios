@@ -39,6 +39,10 @@
   background-color: var(--some);
 }
 
+body{
+  width: 100%;
+}
+
 header{
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
@@ -152,9 +156,10 @@ nav{
 
 /* Organic Section */
 .organicContent{
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
   padding: 8rem 0;
   gap: 5rem;
 
@@ -238,6 +243,7 @@ nav{
 /* Product & Customar */
 
 .productD{
+  width: 100%;
   display: flex;
 
   & .itemsAll{
@@ -339,8 +345,10 @@ nav{
 
 /* fresh products */
 .productSection{
-  padding: 100px 5%;
+  width: 100%;
+  padding: 100px 0;
   text-align: center;
+  margin: 0 auto;
 
   & h2{
     font-size: 4rem;
@@ -413,7 +421,8 @@ nav{
 
 /* Time Line Section */
 .timeLine{
-  padding: 100px 5%;
+  width: 100%;
+  padding: 100px 0;
 
   & .limeLineHeader{
     text-align: center;
@@ -507,6 +516,85 @@ nav{
         }
         & h3{
           font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+/* FAQ Section */
+
+.faqSection{
+  width: 100%;
+  padding: 5rem;
+  background-color: #E9F1EE;
+
+  & .faqDiv{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+    & .faqImg{
+      position: relative;
+
+      & img{
+      border-radius: 15px;
+      }
+    }
+  }
+
+  & .faqText{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    & h2{
+      font-size: 50px;
+    }
+    & .faqList{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      & .faqItem{
+        border-bottom: 1px solid #e0e0e0;
+
+        &.active .faqAns{
+          max-height: 200px;
+        }
+        &.active .faq i{
+          transform: rotate(45deg);
+        }
+
+        & .faq{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px 0;
+          cursor: pointer;
+
+          & span{
+            font-size: 18px;
+            font-weight: 500;
+          }
+          & i{
+            color: var(--primary);
+            transition: transform 0.3s ease;
+          }
+        }
+
+        & .faqAns{
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3 ease;
+
+          & p{
+            padding-bottom: 20px;
+            color: #666;
+            line-height: 1.6;
+          }
         }
       }
     }
