@@ -12,6 +12,7 @@
   --deepG: #1F4E3D;
   --footerL: #1F1E17;
   --footer: #24231D;
+  --bgSome: #E9F1EE;
 }
 
 
@@ -528,7 +529,7 @@ nav{
 
 .faqSection{
   width: 100%;
-  background-color: #E9F1EE;
+  background-color: var(--bgSome);
 
   & .faqDiv{
   width: 80%;
@@ -669,6 +670,60 @@ nav{
         & h3{
           font-weight: 500;
         }
+      }
+    }
+  }
+}
+
+/* Agriculture Market */
+.marketArea{
+  width: 100%;
+  background-color: var(--bgSome);
+
+  .market{
+    width: 80%;
+    padding: 5rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    & .marketLeft{
+      padding: 5rem;
+
+      & .marketText{
+        width: 600px;
+        height: 450px;
+        background-color: var(--deepM);
+        padding: 5rem;
+        color: var(--normal);
+        border-radius: 15px;
+
+        & h2{
+          font-size: 42px;
+          margin-bottom: 1.5rem;
+        }
+        & p{
+          font-size: 15px;
+          line-height: 22px;
+          margin-bottom: 1rem;
+        }
+        & a{
+          color: var(--normal);
+          font-size: 16px;
+          text-transform: uppercase;
+          border-bottom: 2px solid var(--normal);
+        }
+      }
+    }
+    & .marketRight{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      & .company{
+        display: flex;
+        gap: 4rem;
       }
     }
   }
